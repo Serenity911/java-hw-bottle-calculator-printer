@@ -52,8 +52,14 @@ public class PrinterTest {
     }
 
     @Test
-    public void toner_reduces_by_1_every_page_printed() {
+    public void toner_reduced_by_1_every_page_printed() {
         printer.print(1, 1);
         assertEquals(999, printer.getToner());
+    }
+
+    @Test
+    public void toner_not_reduced_if_not_enough_to_print() {
+        printer.print(1001, 1);
+        assertEquals(1000, printer.getToner());
     }
 }
