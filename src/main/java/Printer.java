@@ -11,7 +11,9 @@ public class Printer {
 
     public void print(int numberOfPages, int numberOfCopies) {
         int totalPagesToPrint = numberOfPages * numberOfCopies;
-        this.sheets -= totalPagesToPrint;
+        if (this.sheets >= totalPagesToPrint) {
+            this.sheets -= totalPagesToPrint;
+        }
     }
 
 }
