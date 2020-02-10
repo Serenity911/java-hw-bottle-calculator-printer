@@ -1,8 +1,10 @@
 public class Printer {
     private int sheets;
+    private int toner;
 
     public Printer() {
         this.sheets = 100;
+        this.toner = 1000;
     }
 
     public int getSheets() {
@@ -14,6 +16,10 @@ public class Printer {
         if (this.sheets >= totalPagesToPrint) {
             this.sheets -= totalPagesToPrint;
         }
+    }
+
+    public int getToner() {
+        return this.toner;
     }
 
 }

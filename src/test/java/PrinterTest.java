@@ -40,4 +40,8 @@ public class PrinterTest {
         assertEquals(0, printer.getSheets());
     }
 
+    @Test
+    public void starts_with_toner_filled_up() {
+        assertEquals(1000, printer.getToner());
+    }
 }
