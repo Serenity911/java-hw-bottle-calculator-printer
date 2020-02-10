@@ -62,4 +62,18 @@ public class PrinterTest {
         printer.print(1001, 1);
         assertEquals(1000, printer.getToner());
     }
+
+    @Test
+    public void paper_and_toner_reduced_when_print() {
+        printer.print(100, 1);
+        assertEquals(900, printer.getToner());
+        assertEquals(0, printer.getSheets());
+    }
+
+    @Test
+    public void paper_and_toner_not_reduced_if_not_enough_to_print() {
+        printer.print(1001, 1);
+        assertEquals(1000, printer.getToner());
+        assertEquals(100, printer.getSheets());
+    }
 }
