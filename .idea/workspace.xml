@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f8d10cdc-e7fc-430f-97c4-60cd91ca8a5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WaterBottle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WaterBottle.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PrinterTest">
+  <component name="RunManager" selected="JUnit.WaterBottleTest">
     <configuration name="PrinterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classes_homework" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WaterBottleTest" />
         <item itemvalue="JUnit.PrinterTest" />
         <item itemvalue="JUnit.PrinterTest.paper_and_toner_not_reduced_if_not_enough_to_print" />
         <item itemvalue="JUnit.PrinterTest.paper_and_toner_reduced_when_print" />
         <item itemvalue="JUnit.WaterBottleTest.cannot_remove_10_from_volume_if_less_than_10" />
-        <item itemvalue="JUnit.WaterBottleTest" />
       </list>
     </recent_temporary>
   </component>

@@ -10,9 +10,13 @@ public class WaterBottle {
     }
 
     public void drink() {
-        if (this.volume >= 10) {
+        if (isThereEnoughWater()) {
             this.volume -= 10;
         }
+    }
+
+    public boolean isThereEnoughWater() {
+        return this.volume >= 10;
     }
 
     public void empty() {
