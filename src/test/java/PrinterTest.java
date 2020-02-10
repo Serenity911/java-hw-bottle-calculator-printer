@@ -34,6 +34,10 @@ public class PrinterTest {
         assertEquals(100, printer.getSheets());
     }
 
-
+    @Test
+    public void can_print_if_exactly_number_of_sheets() {
+        printer.print(100, 1);
+        assertEquals(0, printer.getSheets());
+    }
 
 }
