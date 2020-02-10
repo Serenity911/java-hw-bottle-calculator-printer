@@ -51,9 +51,9 @@ public class PrinterTest {
         assertEquals(999, printer.getToner());
     }
 
-//    @Test
-//    public void toner_reduces_by_1_every_page_printed() {
-//        printer.print(1, 1);
-//        assertEquals(999, printer.getToner());
-//    }
+    @Test
+    public void toner_reduces_by_1_every_page_printed() {
+        printer.print(1, 1);
+        assertEquals(999, printer.getToner());
+    }
 }

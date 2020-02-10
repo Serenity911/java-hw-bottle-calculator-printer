@@ -13,8 +13,9 @@ public class Printer {
 
     public void print(int numberOfPages, int numberOfCopies) {
         int totalPagesToPrint = numberOfPages * numberOfCopies;
-        if (this.sheets >= totalPagesToPrint) {
+        if (this.sheets >= totalPagesToPrint && this.toner >= totalPagesToPrint) {
             this.sheets -= totalPagesToPrint;
+            this.toner -= totalPagesToPrint;
         }
     }
 
