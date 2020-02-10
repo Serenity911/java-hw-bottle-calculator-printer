@@ -44,4 +44,16 @@ public class PrinterTest {
     public void starts_with_toner_filled_up() {
         assertEquals(1000, printer.getToner());
     }
+
+    @Test
+    public void toner_can_be_reduced_by_1() {
+        printer.reduceTonerByOne();
+        assertEquals(999, printer.getToner());
+    }
+
+//    @Test
+//    public void toner_reduces_by_1_every_page_printed() {
+//        printer.print(1, 1);
+//        assertEquals(999, printer.getToner());
+//    }
 }

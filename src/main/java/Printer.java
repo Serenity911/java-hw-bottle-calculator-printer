@@ -22,4 +22,8 @@ public class Printer {
         return this.toner;
     }
 
+    public void reduceTonerByOne() {
+        this.toner -= 1;
+    }
+
 }
